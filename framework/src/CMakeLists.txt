@@ -36,15 +36,12 @@ set(_srcs
   bundle/BundleArchive.cpp
   bundle/BundleContext.cpp
   bundle/BundleContextPrivate.cpp
-  bundle/BundleElfFile.cpp
   bundle/BundleEvent.cpp
   bundle/BundleEventHook.cpp
   bundle/BundleFindHook.cpp
   bundle/BundleHooks.cpp
-  bundle/BundleMachOFile.cpp
   bundle/BundleManifest.cpp
   bundle/BundleObjFile.cpp
-  bundle/BundlePEFile.cpp
   bundle/BundlePrivate.cpp
   bundle/BundleRegistry.cpp
   bundle/BundleResource.cpp

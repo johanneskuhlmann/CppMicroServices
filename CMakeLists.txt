@@ -29,7 +29,8 @@ endforeach()
 #-----------------------------------------------------------------------------
 # Check minimum required compiler versions
 #------------------------------------------------------------------------------
-
+set(CMAKE_BUILD_TYPE "RELEASE")
+set(US_BUILD_TESTING OFF CACHE BOOL "" FORCE)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_STANDARD_REQUIRED 1)
 set(CMAKE_CXX_STANDARD 11)
@@ -599,17 +600,6 @@ export(TARGETS ${US_RCC_EXECUTABLE_TARGET}
 
 add_subdirectory(util)
 add_subdirectory(framework)
-add_subdirectory(httpservice)
-add_subdirectory(webconsole)
-add_subdirectory(shellservice)
-
-add_subdirectory(tools/shell)
-
-#-----------------------------------------------------------------------------
-# Documentation
-#-----------------------------------------------------------------------------
-
-add_subdirectory(doc)
 
 #-----------------------------------------------------------------------------
 # Installation
