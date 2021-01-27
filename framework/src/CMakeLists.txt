@@ -1,7 +1,9 @@
 #-----------------------------------------------------------------------------
 # Source files
 #-----------------------------------------------------------------------------
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-copy")
+if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
+  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-copy")
+endif()
 
 set(_srcs
   util/Any.cpp
