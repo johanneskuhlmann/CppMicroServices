@@ -69,6 +69,7 @@
 
 
 #include <sys/stat.h>
+#include <cstdint>
 #include <sys/types.h>
 
 namespace cppmicroservices {
